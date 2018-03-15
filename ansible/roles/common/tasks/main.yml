@@ -1,2 +1,7 @@
 ---
-# tasks file for common
+# tasks file for hello-world
+
+- import_tasks: cleanup.yml
+- import_tasks: system.yml
+- import_tasks: apt.yml
+- import_tasks: user.yml

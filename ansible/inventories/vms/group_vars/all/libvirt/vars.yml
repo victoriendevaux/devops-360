@@ -1,0 +1,16 @@
+libvirt_dns_server: 172.16.112.254
+libvirt_dns_zone: dell112.u13.org
+
+# Ip prefix used for newly created VMs
+libvirt_ip_prefix: '172.16.112'
+
+libvirt_vms:
+    00.webserver:
+        cpu: 1
+        mem: 768
+        ip: "{{ libvirt_ip_prefix }}.60"
+
+    00.database:
+        cpu: 1
+        mem: 768
+        ip: "{{libvirt_ip_prefix }}.70"

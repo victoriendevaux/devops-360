@@ -10,4 +10,8 @@
   hosts: webservers
   become: yes
 
-  roles: []
+  roles:
+    - common
+    - nginx
+    - uswgi
+    - webapp
